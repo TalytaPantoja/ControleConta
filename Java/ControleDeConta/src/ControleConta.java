@@ -3,13 +3,13 @@ import java.util.Scanner;
 public class ControleConta {
     String nome = "Talyta";
     String tipoConta = "Corrente";
-    int saldoInicial = 2000;
+    double saldoInicial = 2000;
 
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         ControleConta controleConta = new ControleConta();
-        int opcao;
+        int opcao = 0;
 
         do {
             System.out.println("\n**** Menu Opcoes ****");
@@ -29,14 +29,14 @@ public class ControleConta {
 
                 case 2:
                     System.out.println("Digite o valor a ser recebido: ");
-                    int receber = scanner.nextInt();
+                    double receber = scanner.nextDouble();
                     controleConta.saldoInicial += receber;
                     System.out.println("Novo saldo: " + (receber + controleConta.saldoInicial));
                     break;
 
                 case 3:
                     System.out.println("Digite o valor a ser transferido: ");
-                    int transferir = scanner.nextInt();
+                    double transferir = scanner.nextInt();
 
                     if (controleConta.saldoInicial > transferir){
                         System.out.println("Transferido com sucesso. Novo saldo: " + (controleConta.saldoInicial - transferir));
