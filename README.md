@@ -1,73 +1,34 @@
-# Controle de Conta Bancária em Java
+# Sistema de Gerenciamento de Clientes – Java Console
 
-Este é um programa simples desenvolvido em **Java** para simular o controle de uma conta bancária diretamente no terminal
+Este projeto é um sistema simples de cadastro e gerenciamento de clientes desenvolvido em Java. Ele permite que o usuário adicione, liste, busque, atualize e remova clientes através de um menu interativo no console.
 
-## 💻 Funcionalidades
+---
 
-- **Consultar Saldo**: Exibe o saldo atual da conta.
-- **Receber Valor**: Permite ao usuário depositar um valor, que será somado ao saldo.
-- **Transferir Valor**: Permite ao usuário transferir um valor da conta, desde que o saldo seja suficiente.
-- **Sair**: Encerra a execução do programa.
+## 🚀 Funcionalidades
 
-## ⚙️ Como Executar
+- ✅ Cadastro de clientes (nome, CPF e e-mail)
+- 📋 Listagem de todos os clientes cadastrados
+- 🔍 Busca de cliente por CPF
+- ✏️ Atualização de dados de cliente
+- ❌ Remoção de cliente por CPF
+- 👋 Encerramento do programa
 
-1. **Clone o repositório**:
-    ```bash
-    git clone https://github.com/TalytaPantoja/controle-conta-java.git
-    ```
+---
 
-2. **Abra o projeto** em uma IDE como o **IntelliJ IDEA**, **Eclipse** ou **NetBeans**.
+## 📚 Conceitos de Java Praticados
 
-3. **Compile e execute** a classe `ControleConta.java`.
+### 1. **Programação Orientada a Objetos (POO)**
+- Criação de **classes**, **atributos** e **métodos**
+- Uso de **encapsulamento** com atributos `private` e métodos `get`/`set`
+- Implementação de **construtores**
+- Sobrescrita do método `toString()` para personalizar a exibição de objetos
 
-4. O programa irá exibir um menu no terminal, onde você pode escolher entre as opções disponíveis para interagir com o sistema de conta bancária.
+### 2. **Coleções**
+- Utilização de `ArrayList` para armazenar objetos do tipo `Cliente`
 
-## 🧑‍💻 Exemplo de Execução
+### 3. **Controle de Fluxo**
+- Estrutura `do-while` para manter o menu em execução até o usuário desejar sair
+- Comando `switch-case` para tratar as opções do menu
 
-Ao rodar o programa, o terminal exibirá um menu como este:
-
-```txt
-**** Menu Opções ****
-1. Consultar Saldo
-2. Receber Valor
-3. Transferir Valor
-0. Sair
-Escolha uma opção:
-```
-
-#Exemplo de operação:
-
-Consultar Saldo (Opção 1):
-```
-Saldo: 2000
-```
-
-Receber Valor (Opção 2):
-```
-Digite o valor a ser recebido: 
-500
-Novo saldo: 2500
-```
-
-Transferir Valor (Opção 3):
-- Caso o saldo seja suficiente:
-```
-Digite o valor a ser transferido:
-500
-Transferido com sucesso. Novo saldo: 1500
-```
-
-- Caso o saldo seja insuficiente:
-```
-Digite o valor a ser transferido:
-2500
-Transação inválida. Seu saldo é: 2000
-```
-
-Sair (Opção 0):
-```
-Operação encerrada. Até a próxima!
-```
-
-
-**Criado por**: Talyta Pantoja
+### 4. **Entrada de Dados**
+- Leitura de dados via `Scanner` para entrada pelo console
